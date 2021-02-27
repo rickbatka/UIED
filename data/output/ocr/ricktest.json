@@ -1,0 +1,34 @@
+{
+    "compos": [
+        {
+            "column_max": 622,
+            "column_min": 350,
+            "row_min": 422,
+            "row_max": 511
+        },
+        {
+            "column_max": 650,
+            "column_min": 294,
+            "row_min": 550,
+            "row_max": 650
+        },
+        {
+            "column_max": 622,
+            "column_min": 266,
+            "row_min": 155,
+            "row_max": 244
+        },
+        {
+            "column_max": 622,
+            "column_min": 255,
+            "row_min": 27,
+            "row_max": 105
+        },
+        {
+            "column_max": 511,
+            "column_min": 277,
+            "row_min": 294,
+            "row_max": 377
+        }
+    ]
+}

@@ -35,14 +35,14 @@ if __name__ == '__main__':
                   'max-word-inline-gap':4, 'max-line-gap':4}
 
     # set input image path
-    input_path_img = 'data/input/30800.jpg'
+    input_path_img = 'data/input/ricktest.jpg'
     output_root = 'data/output'
 
     resized_height = resize_height_by_longest_edge(input_path_img)
 
     is_ip = True
     is_clf = False
-    is_ocr = True
+    is_ocr = False
     is_merge = True
 
     if is_ocr:
@@ -73,4 +73,4 @@ if __name__ == '__main__':
         compo_path = pjoin(output_root, 'ip', str(name) + '.json')
         ocr_path = pjoin(output_root, 'ocr', str(name) + '.json')
         merge.incorporate(input_path_img, compo_path, ocr_path, output_root, params=key_params,
-                          resize_by_height=resized_height, show=True)
+                          resize_by_height=resized_height, show=False)
