@@ -20,7 +20,7 @@ def resize_height_by_longest_edge(img_path, resize_length=800):
 
 if __name__ == '__main__':
     # initialization
-    input_img_root = "E:/Mulong/Datasets/rico/combined"
+    input_img_root = "C:/dev/UIED/data/input"
     output_root = "E:/Mulong/Result/rico/rico_uied/rico_new_uied_v3"
     data = json.load(open('E:/Mulong/Datasets/rico/instances_test.json', 'r'))
 

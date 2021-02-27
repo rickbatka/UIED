@@ -1,0 +1,8 @@
+rick notes
+
+### Build missing windows libeast "adaptor.lib"
+VS2015 command prompt:
+```
+cd detect_text_east/lib_east/lanms
+cl adaptor.cpp ./include/clipper/clipper.cpp /I ./include /I "C:\Users\rickb\AppData\Local\Programs\Python\Python35\include" /LD /Fe:adaptor.pyd /link/LIBPATH:"C:\Users\rickb\AppData\Local\Programs\Python\Python35\libs"
+```

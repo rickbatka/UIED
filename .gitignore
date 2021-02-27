@@ -1,0 +1,7 @@
+east_icdar2015_resnet_v1_50_rbox*
+cnn-rico-1.h5*
+utils/__pycache__/
+venv/
+linux-venv/
+.pipcache/
+.vscode/

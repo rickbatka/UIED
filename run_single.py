@@ -13,7 +13,7 @@ def resize_height_by_longest_edge(img_path, resize_length=800):
 
 
 if __name__ == '__main__':
-
+    #os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
     '''
         ele:min-grad: gradient threshold to produce binary map         
         ele:ffl-block: fill-flood threshold
@@ -42,7 +42,7 @@ if __name__ == '__main__':
 
     is_ip = True
     is_clf = False
-    is_ocr = False
+    is_ocr = True
     is_merge = True
 
     if is_ocr:
@@ -65,7 +65,7 @@ if __name__ == '__main__':
             classifier['Elements'] = CNN('Elements')
             # classifier['Noise'] = CNN('Noise')
         ip.compo_detection(input_path_img, output_root, key_params,
-                           classifier=classifier, resize_by_height=resized_height, show=True)
+                           classifier=classifier, resize_by_height=resized_height, show=False)
 
     if is_merge:
         import merge
